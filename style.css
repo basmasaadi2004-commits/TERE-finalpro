@@ -1,20 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
-background-color: whitesmoke}
-@keyframes hidden{
-    0%{
+
+body {
+    background-color: whitesmoke
+}
+
+@keyframes hidden {
+    0% {
         scale: 1;
     }
-    100%{
+
+    100% {
         scale: 0;
     }
 }
-.load{
+
+.load {
     position: fixed;
     background-color: white;
     inset: 0;
@@ -23,13 +28,15 @@ background-color: whitesmoke}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: hidden 1s 5s both;
-    img{
+    animation: hidden 1s 3s both;
+
+    img {
         width: 100px;
     }
 }
 
-.lds-ring,.lds-ring div {
+.lds-ring,
+.lds-ring div {
     box-sizing: border-box;
 }
 
@@ -76,30 +83,35 @@ background-color: whitesmoke}
 }
 
 
-header{
+header {
     background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 3px;
-    .logo{
+
+    .logo {
         margin: 15px;
     }
-    .links{
-            display: flex;
-            align-items: center;
-            gap: 35px;
-            margin: 5px;
-            a{
-                text-decoration: none;
-                color: black;
-                font-size: 17px;
-                &:hover{
-                    text-decoration:underline 3px #75BF7A;
-                }
+
+    .links {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        margin: 5px;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 17px;
+
+            &:hover {
+                text-decoration: underline 3px #75BF7A;
             }
-            button{
+        }
+
+        button {
             color: white;
             padding: 12px 40px;
             border: 2px solid #75BF7A;
@@ -107,59 +119,75 @@ header{
             background-color: #75BF7A;
             font-size: 17px;
             cursor: pointer;
-            &:hover{
-                    background-color: white;
-                    color: #75BF7A;    
-             }
-     
-}}
- .menu{
-                display: none;}
-   }
-main{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 40px;
-        padding: 60px;
-        .content{
-            width: 50%;
-            h1{
-                font-size: 50px;
-                margin-bottom: 30px;
+
+            &:hover {
+                background-color: white;
+                color: #75BF7A;
             }
-            p{
-                font-size: 20px;
-                margin-bottom: 35px;
-                color: grey;
-            }
-            .btns{
-                display: flex;
-                gap: 20px;
-                button{
+
+        }
+    }
+
+    .menu{
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 60px;
+
+    .content {
+        width: 50%;
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 35px;
+            color: grey;
+        }
+
+        .btns {
+            display: flex;
+            gap: 20px;
+
+            button {
                 font-size: 17px;
                 color: white;
                 padding: 15px 25px;
-                background-color:black;
+                background-color: black;
                 border-radius: 5px;
                 display: flex;
                 align-items: center;
                 gap: 10px;
                 cursor: pointer;
                 transition: 0.3s;
-                 &:hover{
+
+                &:hover {
                     opacity: 0.85;
                 }
-            }}
-        }
-        .image{
-            img{
-             max-width: 600px;
-             height: 700px;
             }
         }
-} 
-.services{
+    }
+
+    .image {
+        img {
+            max-width: 600px;
+            height: 700px;
+        }
+    }
+}
+
+.services {
     background-color: #75BF7A;
     display: flex;
     gap: 20px;
@@ -168,47 +196,56 @@ main{
     border-radius: 10px;
     padding: 40px;
     margin-inline: 50px;
-      p{
-         color: white;
-         font-size: 20px;
-         width: 30%;
-        } 
-     .service-box{
-                display: flex;
-                gap: 15px;
-                width: 70%;
 
-                input{
-                    flex: 1;
-                    padding: 15px;
-                    border: none;
-                    border-radius: 5px;
-                }
+    p {
+        color: white;
+        font-size: 20px;
+        width: 30%;
+    }
 
-                button{
-                    background-color: black;
-                    color: white;
-                    border: none;
-                    padding: 15px 20px;
-                    border-radius: 5px;
-                    cursor: pointer;
-                }   
+    .service-box {
+        display: flex;
+        gap: 15px;
+        width: 70%;
+
+        input {
+            width: 600px;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
         }
-}    
- .features{
+
+        button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+                    opacity: 0.85;
+                }
+        }
+    }
+}
+
+.features {
     padding: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    h2{
+
+    h2 {
         margin-bottom: 20px;
         font-size: 30px;
-        span{
+
+        span {
             color: #75BF7A;
         }
     }
-    .feature-card{
+
+    .feature-card {
         background-color: white;
         width: 900px;
         border-radius: 10px;
@@ -216,114 +253,175 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .text{
-            span{
+
+        .text {
+            span {
                 color: #75BF7A;
                 font-size: 45px;
                 font-weight: bold;
             }
-            h3{
+
+            h3 {
                 margin: 10px 0;
                 font-size: 25px;
             }
-            p{
+
+            p {
                 color: gray;
                 font-size: 15px;
             }
         }
-        img{
+
+        img {
             width: 170px;
         }
     }
-    .left{
+
+    #left {
         margin-right: 120px;
     }
-    .right{
+
+    #right {
         margin-left: 120px;
     }
 }
-  footer{
-            text-align: center;
-            padding: 40px;
-            color: gray;
-            span{
-                display: none;
-            }
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: gray;
+
+    span {
+        display: none;
+    }
+}
+
+@media (width<=900px) {
+    header {
+        padding: 15px 20px;
+
+        .menu {
+            display: block;
+        }
+        
+        .links{
+            background: white;
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 75%;
+            right: 0%;
+            width: 30%;
+            box-shadow: 0 4px 6px rgb(0,0,0,0.1);
+            z-index: 100000;
+            padding: 10px 0;
+        }
+        #menu-btn:checked ~ .links{
+            display: flex;
         }
 
-@media (width<=900px){
-    header{
-        padding: 15px 20px;
-        .links{
-            display: none;
-        }
-        .menu{
-            display: block;
-            font-size: 28px;
-        }
-        .logo img{
+        .logo img {
             width: 120px;
         }
     }
-    main{
+
+    main {
         flex-direction: column-reverse;
         padding: 20px;
         text-align: center;
         gap: 20px;
-        .content{
+
+        .content {
             width: 100%;
-            .btns{
+
+            .btns {
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
                 gap: 10px;
-                button{
+
+                button {
                     width: 160px;
                     justify-content: center;
                     padding: 12px;
                     font-size: 12px;
-                    img{
+
+                    img {
                         width: 18px;
                     }
-                }}}
-        .image{
-            img{
+                }
+            }
+        }
+
+        .image {
+            img {
                 width: 100%;
-            }}}
-    .services{
+            }
+        }
+    }
+
+    .services {
         margin: 20px;
         padding: 20px;
         flex-direction: column;
         text-align: center;
-        p{
+
+        p {
             width: 100%;
             font-size: 18px;
         }
-        .service-box{
+
+        .service-box {
             width: 100%;
             flex-direction: column;
             gap: 10px;
-            input{
+
+            input {
                 width: 100%;
             }
-            button{
+
+            button {
                 width: 100%;
-            }}}
-    .features{
+            }
+        }
+    }
+
+    .features {
         padding: 20px;
         gap: 20px;
-        .feature-card{
+
+        .feature-card {
             width: 100%;
-            margin: 0 ;
+            margin: 0;
             flex-direction: column;
+            align-items: center;
             text-align: center;
             gap: 20px;
-            img{
+
+            img {
                 width: 140px;
-            }}}
-    footer{
-        span{
+            }
+        }
+    }
+
+    #left,
+    #right {
+        flex-direction: column-reverse;
+
+    }
+
+    .features {
+    #left  ,     #right {
+
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+    footer {
+        span {
             display: block;
             margin-bottom: 20px;
         }
-    }}
+    }
+}

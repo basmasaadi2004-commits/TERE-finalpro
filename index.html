@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/logo-lg-175.svg" type="image/svg+xml">
     <title>Tere</title>
 </head>
 
@@ -21,13 +22,14 @@
         <div class="logo">
             <img src="./img/logo-lg-175.svg" alt="tere logo">
         </div>
+        <input type="checkbox" id="menu-btn" hidden>
+        <label for="menu-btn" class="menu">☰</label>
         <nav class="links">
             <a href="#">Home</a>
             <a href="#">How tere works</a>
             <a href="#">Tere benefits</a>
             <button class="help">Help Center</button>
         </nav>
-        <div class="menu">☰</div>
     </header>
 
     <main>
@@ -61,7 +63,7 @@
     <section class="features">
         <section class="features">
     <h2><span>TERE</span> BENEFITS</h2>
-    <div class="feature-card left">
+    <div class="feature-card" id="left">
         <div class="text">
             <span>01.</span>
             <h3>Flexible <br> working hours</h3>
@@ -72,7 +74,7 @@
         </div>
         <img src="./img/ben1-lg-250.png" alt="">
     </div>
-    <div class="feature-card right">
+    <div class="feature-card" id="right">
         <img src="./img/bef2-lg-250.png" alt="">
         <div class="text">
             <span>02.</span>
@@ -83,7 +85,7 @@
             </p>
         </div>
     </div>
-    <div class="feature-card left">
+    <div class="feature-card" id="left">
         <div class="text">
             <span>03.</span>
             <h3>Customer <br> support 24/7</h3>
